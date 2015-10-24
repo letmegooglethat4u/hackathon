@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR4Q">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONAR4Q</Schema>
+<User>sonarnt</User>
+<Password pwd="*XN? niq3V_}W=[/-pjAgo*JIMT!g`*Wh6rBn^4dBTb\Z)~cibt]-T:.]wxAIs-)|72+IR0ebY5">b3362a6d26bebc6847be3621061d4c002136237e5057be2d4e76021bef99e2e91c02aeee9df20b7bc77dfb99c676f0cf25f1d03823e8913789ff1f773a</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR3Q">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONAR3Q</Schema>
+<User>sonarnt</User>
+<Password pwd="t@WNt@9nB5GBpi[hs_NDu;/|AYi+W jOA'nl35/~-2d?p7I%K'`p$rcviHr@:A[agvr">b3362a6d8f251ce088cc045e0b3dcfd194c76a466a4fb495d46ef722b9c7da30538551ccf8d3afa17813330d8635574dcdf5dcf83ea11122807c97cae58690f5310a</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR2Q">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONAR2Q</Schema>
+<User>sonarnt</User>
+<Password pwd="~\5g^IgtnJQy[QdtXd?U`!HhKm_v6#]z8+LPQD;3I'7JY4TVe9-gT#,jNm*PMzyKpSb_ /*8]-">b3362a6d07d9307fc93f7fd6f5f5d90cf9f3f1cc9cdd28e81e62c17ff9d78688d9d6cffd75cdb81bd7acb4d603dcca9d1fbc203e43f569019cf7f635450c506dbe47ed62</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONARP">
+<Database>Oracle</Database>
+<Url>ny4lxorclp008.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONARP</Schema>
+<User>readuser</User>
+<Password pwd="`X,V(z}zXcO!32Si:3v2k#]+'~j8was=5fgFi`;TyNgXIutLAjC8],W}RU1a3'MB">c20a4f5631a2263c667ac8c4c4d0e72d2a39ba6bc5f9307a167cc965009e7825d8aba1244bbc2bbe287743c6b562506986095927884e41c44313add418ca</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="NZ_TEST">
+<Database>Netezza</Database>
+<Url>kwanzmkdwq001.qa.finra.org</Url>
+<Port>5480</Port>
+<Schema>joshiv_dev</Schema>
+<User>JoshiV</User>
+<Password pwd=":(bL:Cdz:qJ4nT*ZwW3_ED|L7cyy@DQjOP#.vkyOPhH^?l;G[;bj+Sk}B7LduK'$Z5A%lHA :X6J">a2fccc0f48afa80ca7dbb35a6598de287ea2df5131e36bc4eeaf0a1cc67c4f357643926fbc0a43c1977b5bdeab53c2bef2213bcbb5d4d50148d7b337b7a9ae8eb5feec1189972ef1b4ab60a9abf00800</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="CSVTest">
+<Database>Delimited File</Database>
+<Url>C:\Users\clarkk\Desktop\IssDetPiece.csv</Url>
+<Port>,</Port>
+<Schema></Schema>
+<User></User>
+<Password pwd=" ZF;/ix9N,jjj\ug3f@\;p^Kj`Fx)\Lvp%M{AyMAr ++)q4UUB{~96EL8dKx|`B4TRm"></Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="XlsxTest">
+<Database>Excel</Database>
+<Url>C:\Users\clarkk\Desktop\IssDetPieceOther.xlsx</Url>
+<Port></Port>
+<Schema>IssDetPiece</Schema>
+<User></User>
+<Password pwd="(m!#AbU44*\6CG'JrrTr\Q3qco}h]o9$eA6Rcj5=T*[0ofF]xw ?b=d,VzW`2XWYk#cx_W97 ;Ts"></Password>
+</Connection>

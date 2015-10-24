@@ -1,0 +1,49 @@
+<Datapump>
+<Delete db="SONAR3Q" table="VISTA_ISSUE_MP_VOL_CNTRN_ST"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'VISTA_ISSUE_MP_VOL_CNTRN_ST' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.VISTA_ISSUE_MP_VOL_CNTRN_ST" dest="SONARDBA.VISTA_ISSUE_MP_VOL_CNTRN_ST" srcDB="SONARP" destDB="SONAR3Q">
+<Column>ISSUE_UNIQUE_ID</Column>
+<Column>TRD_DT</Column>
+<Column>MKT_CLASS_CD</Column>
+<Column>MKT_SSSN_CD</Column>
+<Column>MP_ID</Column>
+<Column>ISSUE_SYM_ID</Column>
+<Column>AGNCY_BUY_VOL_CNTRN_QT</Column>
+<Column>AGNCY_SELL_VOL_CNTRN_QT</Column>
+<Column>PRNCL_RTL_SELL_VOL_CNTRN_QT</Column>
+<Column>TTL_VOL_CNTRN_QT</Column>
+<Column>BUY_VOL_CNTRN_QT</Column>
+<Column>SELL_VOL_CNTRN_QT</Column>
+<Column>SS_TTL_VOL_CNTRN_QT</Column>
+<Column>CROSS_VOL_CNTRN_QT</Column>
+<Column>ACT_TARS_DELTA_VOL_CNTRN_QT</Column>
+<Column>BLCK_BUY_VOL_CNTRN_QT</Column>
+<Column>BLCK_CROSS_VOL_CNTRN_QT</Column>
+<Column>BLCK_MEDIA_BUY_VOL_CNTRN_QT</Column>
+<Column>BLCK_MEDIA_SELL_VOL_CNTRN_QT</Column>
+<Column>BLCK_MEDIA_TTL_VOL_CNTRN_QT</Column>
+<Column>BLCK_SELL_VOL_CNTRN_QT</Column>
+<Column>BLCK_TTL_VOL_CNTRN_QT</Column>
+<Column>MEDIA_BUY_VOL_CNTRN_QT</Column>
+<Column>MEDIA_SELL_VOL_CNTRN_QT</Column>
+<Column>MEDIA_TTL_VOL_CNTRN_QT</Column>
+<Column>PRNCL_BUY_VOL_CNTRN_QT</Column>
+<Column>PRNCL_RTL_BUY_VOL_CNTRN_QT</Column>
+<Column>PRNCL_SELL_VOL_CNTRN_QT</Column>
+<Column>PRNCL_WHLSL_BUY_VOL_CNTRN_QT</Column>
+<Column>PRNCL_WHLSL_SELL_VOL_CNTRN_QT</Column>
+<Column>RTL_BUY_VOL_CNTRN_QT</Column>
+<Column>RTL_SELL_VOL_CNTRN_QT</Column>
+<Column>SS_BLCK_BUY_VOL_CNTRN_QT</Column>
+<Column>SS_BLCK_SELL_VOL_CNTRN_QT</Column>
+<Column>SS_BUY_VOL_CNTRN_QT</Column>
+<Column>SS_SELL_VOL_CNTRN_QT</Column>
+<Column>SS_TO_CSTMR_BLCK_VOL_CNTRN_QT</Column>
+<Column>SS_TO_CSTMR_VOL_CNTRN_QT</Column>
+<Column>TTL_SS_BLCK_VOL_CNTRN_QT</Column>
+<Column>WHLSL_BUY_VOL_CNTRN_QT</Column>
+<Column>WHLSL_SELL_VOL_CNTRN_QT</Column>
+<Column>SRC_NM</Column>
+</Pull>
+</Datapump>

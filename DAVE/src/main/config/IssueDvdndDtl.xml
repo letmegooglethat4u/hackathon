@@ -1,0 +1,48 @@
+<Datapump>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'IssueDvdndDtl' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.DVDND_SPLITS_DTL_ST" dest="SONARDBA.DVDND_SPLITS_DTL_ST" srcDB="SONARP" destDB="SONAR3Q">
+<Column>DVDND_SPLITS_DT</Column>
+<Column>ISSUE_ID</Column>
+<Column>TYPE_CD</Column>
+<Column>DVDND_ID</Column>
+<Column>REC_DT</Column>
+<Column>DVDND_SRC_CD</Column>
+<Column>SPLIT_FCTR_QT</Column>
+<Column>CASH_FCTR_QT</Column>
+<Column>EX_DT</Column>
+<Column>DCLRN_DT</Column>
+<Column>RVRS_EFCTV_DT</Column>
+<Column>PYMNT_DT</Column>
+<Column>CRNCY_CD</Column>
+<Column>DCLRN_CRNCY_CD</Column>
+<Column>DAILY_LIST_PRNT_DT</Column>
+<Column>CASH_BFR_STOCK_FL</Column>
+<Column>RGHTS_BASIS_TX</Column>
+<Column>RGTHS_XPRTN_DT</Column>
+<Column>RGHTS_EXRCS_PR</Column>
+<Column>CASH_DVDND_AM</Column>
+<Column>DCLRN_CASH_AM</Column>
+<Column>YTD_CASH_DVDND_AM</Column>
+<Column>WIPE_QUOTE_FL</Column>
+<Column>PRCSD_FL</Column>
+<Column>ROLL_BACK_FL</Column>
+<Column>HSTRC_FL</Column>
+<Column>ISG_CMMNT_TX</Column>
+<Column>PURGE_ODR_FL</Column>
+<Column>CMMNT_ID</Column>
+<Column>NDQ_CREAT_TS</Column>
+<Column>CREAT_USER_ID</Column>
+<Column>LAST_UPDT_TS</Column>
+<Column>LAST_UPDT_USER_ID</Column>
+<Column>NEWS_FL</Column>
+<Column>DAILY_LIST_APRVL_FL</Column>
+<Column>DAILY_LIST_CMMNT_ID</Column>
+<Column>NEXT_DAY_EX_DAY_FL</Column>
+<Column>DVDND_DPLY_AM_TX</Column>
+<Column>DAILY_LIST_APRVL_TS</Column>
+<Column>DUE_BILL_RDMBL_DT</Column>
+<Column>CREAT_TS</Column>
+<Where value="SONMARKETDAY" comp="eq" col="DVDND_SPLITS_DT"/>
+</Pull>
+</Datapump>

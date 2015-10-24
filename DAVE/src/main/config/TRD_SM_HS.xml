@@ -1,0 +1,14 @@
+<Datapump>
+<Delete db="SONAR3Q" table="TRD_SM_HS"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'TRD_SM_HS' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.TRD_SM_HS" dest="SONARDBA.TRD_SM_HS" srcDB="SONARP" destDB="SONAR3Q">
+<Column>TRD_DT</Column>
+<Column>MKT_CLASS_CD</Column>
+<Column>ISSUE_SYM_ID</Column>
+<Column>LSALE_TRD_PR</Column>
+<Column>ENTRD_SHARE_QT</Column>
+<Column>HIGH_TRD_PR</Column>
+<Column>LOW_TRD_PR</Column>
+</Pull>
+</Datapump>

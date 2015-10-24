@@ -1,0 +1,21 @@
+<Datapump>
+<Delete db="SONAR3Q" table="STGNG_SONAR_OATS_FIRM"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'STGNG_SONAR_OATS_FIRM' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.STGNG_SONAR_OATS_FIRM" dest="SONARDBA.STGNG_SONAR_OATS_FIRM" srcDB="SONARP" destDB="SONAR3Q">
+<Column>NS_CSTMR_ID</Column>
+<Column>CMPNY_NM</Column>
+<Column>CSTMR_LEVEL_NB</Column>
+<Column>BD_NB</Column>
+<Column>CMPNY_ST_CD</Column>
+<Column>EFCTV_DT</Column>
+<Column>XPRTN_DT</Column>
+<Column>FRST_RPTG_DT</Column>
+<Column>PRNT_NS_CSTMR_ID</Column>
+<Column>FIRM_HS_FL</Column>
+<Column>BD_NB_EFCTV_DT</Column>
+<Column>BD_NB_XPRTN_DT</Column>
+<Column>PRNT_NS_ID_EFCTV_DT</Column>
+<Column>PRNT_NS_ID_XPRTN_DT</Column>
+</Pull>
+</Datapump>

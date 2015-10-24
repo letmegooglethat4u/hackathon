@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR2Q">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONAR2Q</Schema>
+<User>sonarnt</User>
+<Password pwd="{t$9`pmb8@GAu@lb7S-mC]">be79d196c86e9bcf</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONARP">
+<Database>Oracle</Database>
+<Url>ny4lxorclp008.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONARP</Schema>
+<User>readuser</User>
+<Password pwd="`E{jsHHIHaeK#-/n BI">bba781d2a4a088bd</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR3Q">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONAR3Q</Schema>
+<User>sonarnt</User>
+<Password pwd="XJx2;}JY61Wz -$t v">d756d88da257b3ba</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONARQ">
+<Database>Oracle</Database>
+<Url>kwalxorclq001.finra.org</Url>
+<Port>1521</Port>
+<Schema>SONARQ</Schema>
+<User>sonarnt</User>
+<Password pwd="E#GTf*k~bv6PL@!@]iw">d8b5cdc6b55879af</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="SONAR2D">
+<Database>Oracle</Database>
+<Url>rkvrhld263.devlab.dev</Url>
+<Port>1521</Port>
+<Schema>SONAR2D</Schema>
+<User>sonarnt</User>
+<Password pwd="i[saHAm[]4IN+FBK I ">93b88eacb4b49f7f7b67917c</Password>
+</Connection>
+<?xml version="1.0" encoding="utf-8"?>
+<Connection name="TEST">
+<Database>Excel</Database>
+<Url>C:\Users\clarkk\Documents\FakeDB.xlsx</Url>
+<Port></Port>
+<Schema>CNCL</Schema>
+<User></User>
+<Password pwd="'mUuuN6'/g7j[~:!"></Password>
+</Connection>

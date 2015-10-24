@@ -1,0 +1,22 @@
+<Datapump>
+<Delete db="SONAR3Q" table="ISGVC_ISSUE_SM_ST"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'ISGVC_ISSUE_SM_ST' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.ISGVC_ISSUE_SM_ST" dest="SONARDBA.ISGVC_ISSUE_SM_ST" srcDB="SONARP" destDB="SONAR3Q">
+<Column>TRD_DT</Column>
+<Column>RUN_ID</Column>
+<Column>ISSUE_ID</Column>
+<Column>ISSUE_SYM_ID</Column>
+<Column>MKT_CLASS_CD</Column>
+<Column>REC_LOAD_DT</Column>
+<Column>AGNCY_BUY_VOL_QT</Column>
+<Column>AGNCY_SELL_VOL_QT</Column>
+<Column>BUY_VOL_QT</Column>
+<Column>PRNCL_BUY_VOL_QT</Column>
+<Column>PRNCL_SELL_VOL_QT</Column>
+<Column>SELL_VOL_QT</Column>
+<Column>CROSS_TRD_SELL_VOL_QT</Column>
+<Column>TTL_SHRT_SALE_VOL_QT</Column>
+<Column>TTL_VOL_QT</Column>
+</Pull>
+</Datapump>

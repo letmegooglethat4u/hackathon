@@ -1,0 +1,20 @@
+<Datapump>
+<Delete db="SONAR3Q" table="VISTA_ISSUE_MP_TRANS_CNTRN_ST"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'VISTA_ISSUE_MP_TRANS_CNTRN_ST' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.VISTA_ISSUE_MP_TRANS_CNTRN_ST" dest="SONARDBA.VISTA_ISSUE_MP_TRANS_CNTRN_ST" srcDB="SONARP" destDB="SONAR3Q">
+<Column>ISSUE_UNIQUE_ID</Column>
+<Column>TRD_DT</Column>
+<Column>MKT_CLASS_CD</Column>
+<Column>MKT_SSSN_CD</Column>
+<Column>MP_ID</Column>
+<Column>ISSUE_SYM_ID</Column>
+<Column>PRNCL_RTL_BUY_CNTRN_CT</Column>
+<Column>PRNCL_RTL_SELL_CNTRN_CT</Column>
+<Column>AGNCY_BUY_CNTRN_CT</Column>
+<Column>AGNCY_SELL_CNTRN_CT</Column>
+<Column>CROSS_CNTRN_CT</Column>
+<Column>SRC_NM</Column>
+<Column>TTL_CNTRN_CT</Column>
+</Pull>
+</Datapump>

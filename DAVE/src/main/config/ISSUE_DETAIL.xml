@@ -1,0 +1,29 @@
+<Datapump>
+<Delete db="SONAR3Q" table="ISSUE_DETAIL"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'ISSUE_DETAIL' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.ISSUE_DETAIL" dest="SONARDBA.ISSUE_DETAIL" srcDB="SONARP" destDB="SONAR3Q">
+<Column>ISSUE_SYM_ID</Column>
+<Column>NM_ID</Column>
+<Column>ISSUE_ID</Column>
+<Column>ISSUE_NM</Column>
+<Column>EFCTV_DT</Column>
+<Column>LOAD_DT</Column>
+<Column>MKT_CLASS_CD</Column>
+<Column>XPRTN_DT</Column>
+<Column>SIC_CD</Column>
+<Column>CUSIP_ID</Column>
+<Column>ISSUE_TYPE_TX</Column>
+<Column>ORG_ID</Column>
+<Column>ORGN_CD</Column>
+<Column>NASDQ_100_FL</Column>
+<Column>MKT_CNTR_CD</Column>
+<Column>TRD_SYM_ID</Column>
+<Column>SIAC_SYM_ID</Column>
+<Column>BOND_GRADE_CD</Column>
+<Column>CNVRB_FL</Column>
+<Column>TCKR_SYM_ID</Column>
+<Column>MTRTY_DT</Column>
+<Column>SHRT_SALE_XMPTN_CD</Column>
+</Pull>
+</Datapump>

@@ -1,0 +1,14 @@
+<Datapump>
+<Delete db="SONAR3Q" table="STGNG_AREA_PBLC_NEWS_HS"/>
+<Check db="SONARP" res="1" sleep="10" totalWait="7" value="SONMARKETDAY">SELECT count(*) FROM SONARDBA.PROC_CNTRL 
+	WHERE PROC_NM = 'STGNG_AREA_PBLC_NEWS_HS' and PRCSG_DT = ? and PROC_STATUS = 'COMPLETE'</Check>
+<Pull source="SONARDBA.STGNG_AREA_PBLC_NEWS_HS" dest="SONARDBA.STGNG_AREA_PBLC_NEWS_HS" srcDB="SONARP" destDB="SONAR3Q">
+<Column>TRD_DT</Column>
+<Column>NEWS_ID</Column>
+<Column>SCR_CD</Column>
+<Column>NEWS_STORY_DT</Column>
+<Column>NEWS_STORY_TM</Column>
+<Column>NEWS_STORY_HDLN_TX</Column>
+<Column>NEWS_STORY_TX</Column>
+</Pull>
+</Datapump>
