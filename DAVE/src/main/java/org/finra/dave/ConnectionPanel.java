@@ -218,6 +218,7 @@ public class ConnectionPanel extends JPanel{
 			url.setText("");
 			port.setTitle("Port");
 			port.setText("");
+			schema.setTitle("Schema");
 			schema.setText("");
 			schema.setEnabled(false);
 			port.setEnabled(false);
@@ -247,6 +248,7 @@ public class ConnectionPanel extends JPanel{
 			url.setText("");
 			port.setTitle("Delimitor");
 			port.setText("");
+			schema.setTitle("Schema");
 			schema.setText("");
 			schema.setEnabled(false);
 			user.setText("");
@@ -263,6 +265,7 @@ public class ConnectionPanel extends JPanel{
 			url.setText("");
 			port.setTitle("Port");
 			port.setText("");
+			schema.setTitle("Schema");
 			schema.setText("");
 			user.setText("");
 			pass.setText("");
@@ -276,6 +279,7 @@ public class ConnectionPanel extends JPanel{
 			db_names.setSelectedItem(s.db_type);
 			name.setText(s.name);
 			url.setText(s.url);
+			schema.setTitle("Schema");
 			schema.setEnabled(false);
 			port.setEnabled(false);
 			port.setTitle("Port");
@@ -305,6 +309,7 @@ public class ConnectionPanel extends JPanel{
 			port.setTitle("Delimitor");
 			port.setText(s.port);
 			this.repaint();
+			schema.setTitle("Schema");
 			schema.setText(s.schema);
 			schema.setEnabled(false);
 			user.setText(s.user);
@@ -320,6 +325,7 @@ public class ConnectionPanel extends JPanel{
 			port.setTitle("Port");
 			port.setText(s.port);
 			this.repaint();
+			schema.setTitle("Schema");
 			schema.setText(s.schema);
 			user.setText(s.user);
 			pass.setText(s.pass);
